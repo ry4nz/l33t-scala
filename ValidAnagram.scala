@@ -19,7 +19,5 @@ object Solution extends App {
     a forall (_ == 0)
   }
   // Functional O(n) solution
-  def solution3(x: String, y:String): Boolean = {
-    ((x groupBy identity).toList diff (y groupBy identity).toList).isEmpty
-  }
+  def solution3(x: String, y:String): Boolean = ((x groupBy identity).toList diff (y groupBy identity).toList).isEmpty
 }
